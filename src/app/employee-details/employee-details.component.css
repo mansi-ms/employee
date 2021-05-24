@@ -1,0 +1,11 @@
+.employee-form {
+    padding: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+input, select {
+    border: solid black 1px;
+}

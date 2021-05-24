@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.name {
+    justify-content: space-between;
+    display: flex;
+    margin-right: 10px;
+}
+
+.oi, strong {
+    cursor: pointer;
+}
+
+.employee-list {
+    border: black solid 1px;
+    border-radius: 18px;
+    width: 200px;
+    padding: 5px;
+    margin: -1px;
+    background-color: #cccaca;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.employee-details {
+    background-color: #cccaca;
+    margin: 10px 0 0 10px;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: rgb(236, 232, 232);
+}

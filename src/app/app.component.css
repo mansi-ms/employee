@@ -1,0 +1,8 @@
+.employee {
+    border: black solid 2px;
+    border-radius: 18px;
+    width: fit-content;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(243, 239, 239);
+}

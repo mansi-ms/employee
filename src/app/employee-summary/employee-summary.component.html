@@ -1,0 +1,19 @@
+<div class="header">
+    <h3>Employees</h3>
+    <button type="button" class="btn btn-light btn-outline-secondary" (click)="addEmployee()">+ Add New</button>
+</div>
+<div class="content">
+    <div>
+        <div *ngFor="let employee of employees" class="employee-list" [ngClass]="{'active':(add && editEmployee && employee === editEmployee)}">
+            <div class="name">
+                <strong (click)="updateEmployee(employee)">{{employee.fullName}}</strong>
+                <span class="oi oi-box" (click)="deleteEmployee(employee)" title="Delete"></span>
+            </div>
+            <div>{{employee.position}}</div>
+        </div>
+    </div>
+
+    <div class="employee-details">
+        <app-employee-details *ngIf="add" (loadEmployees)="loadEmployees(employees)" [employee]="editEmployee"></app-employee-details>
+    </div>
+</div>
